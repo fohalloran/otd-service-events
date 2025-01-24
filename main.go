@@ -212,7 +212,6 @@ func addEvent(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// my house: 51.465317091478745, -0.15783668426331612
 	http.HandleFunc("GET /api/events/{id}", getEventById)
 	http.HandleFunc("GET /api/events", getEvents)
 	http.HandleFunc("POST /api/events", addEvent)
